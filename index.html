@@ -11,18 +11,52 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./index.css" rel="stylesheet" />
-    <title>SE1 Website</title>
+    <title>Enhanced Blackboard Calendar</title>
   </head>
   <body>
-    <div class="page-container container">
-      <div class="page-title">
-        <h1 class="title">BB Calendar</h1>
-      </div>
-      <div class="project-background container">
-        <h2 class="title">Project Background</h2>
-        <p class="text-box">
-          The Blackboard’s calendar feature seems very limited. We think this
+
+    <header class="header sticky-top">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a name="proj-back" class="nav-link scrollable-nav-link" href="#project-background">Background</a>
+              </li>
+              <li class="nav-item">
+                <a name="desc" class="nav-link scrollable-nav-link" href="#description">Description</a>
+              </li>
+              <li class="nav-item">
+                <a name="roster" class="nav-link scrollable-nav-link" href="#roster">Roster</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">SRS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/vladventura/software-engineering-1-project" target="_blank">Prototype</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./project-description.pdf" target="_blank">Case Description</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <div class="page-container container">
+        <div class="page-title">
+          <h1 class="title">Enhanced Blackboard Calendar</h1>
+        </div>
+        <div class="project-background-container container">
+            <h2 id="project-background" class="title">Project Background</h2>
+          <p class="text-paragraph">
+            The Blackboard’s calendar feature seems very limited. We think this
           part of the blackboard can be improved. There are features in
           blackboard calendar that is not available in many common calendar
           applications. For example, blackboard calendar does not allow its
@@ -34,7 +68,7 @@
         </p>
       </div>
       <div class="project-description-brief container">
-        <h2 class="title">Brief Description</h2>
+        <h2 id="description" class="title">Brief Description</h2>
         <p class="text-paragraph">
           There are some features that would make the calendar application
           within blackboard much more useful to a student. We are introducing
@@ -42,16 +76,16 @@
           application which will improve a student’s ability to track
           assignments and his/her progress in class.
           <br />
-          <ol>
-            <li>The user can set up repeating events</li>
-            <li>An event can be transferred to a different personal calendar</li>
-            <li>Notifications can be set for events – such as a three-day warning before an exam</li>
-            <li>Options such as hiding completed events or have a check mark display on turned in assignments</li>
+          <ol class="numeric-list">
+            <li class="numbered-item">The user can set up repeating events</li>
+            <li class="numbered-item">An event can be transferred to a different personal calendar</li>
+            <li class="numbered-item">Notifications can be set for events – such as a three-day warning before an exam</li>
+            <li class="numbered-item">Options such as hiding completed events or have a check mark display on turned in assignments</li>
           </ol>
         </p>
       </div>
       <div class="team-roster container">
-        <h2 class="title">Team Roster</h2>
+        <h2 id="roster" class="title">Team Roster</h2>
         <div class="container text-center mb-5">
           <div class="row row-cols-2 row-cols-md-3 g-4">
             <div class="col-md-4">
@@ -68,6 +102,17 @@
                     up the bulk of the card's content.
                   </p>
                 </div>
+                <div class="card-body social-container">
+                  <a target="_blank" href="https://github.com/cchung2020" class="social-link">
+                    <i class="fa-github fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://google.com" class="social-link">
+                    <i class="fa-linkedin fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://google.com" class="social-link">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
@@ -80,9 +125,19 @@
                 <div class="card-body">
                   <h5 class="card-title">Jae Choi</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Computer Science, projected graduation of '23 Fall. Software Engineer for the project.
                   </p>
+                </div>
+                <div class="card-body social-container">
+                  <a target="_blank" href="https://github.com/jaec1989" class="social-link">
+                    <i class="fa-github fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://linkedin.com/in/jae-choi-77b97b98" class="social-link">
+                    <i class="fa-linkedin fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="mailto:jaec1989@gmail.com" class="social-link">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -100,6 +155,17 @@
                     up the bulk of the card's content.
                   </p>
                 </div>
+                <div class="card-body social-container">
+                  <a target="_blank" href="https://github.com/mishta-bean" class="social-link">
+                    <i class="fa-github fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://google.com" class="social-link">
+                    <i class="fa-linkedin fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://google.com" class="social-link">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
@@ -115,6 +181,17 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
+                </div>
+                <div class="card-body social-container">
+                  <a target="_blank" href="https://github.com/vladventura" class="social-link">
+                    <i class="fa-github fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://linkedin.com/in/vladventura" class="social-link">
+                    <i class="fa-linkedin fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="mailto:vladventura@outlook.es" class="social-link">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -132,6 +209,17 @@
                     up the bulk of the card's content.
                   </p>
                 </div>
+                <div class="card-body social-container">
+                  <a target="_blank" href="https://github.com/ZacharyMcCann" class="social-link">
+                    <i class="fa-github fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://google.com" class="social-link">
+                    <i class="fa-linkedin fa-brands fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://google.com" class="social-link">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -139,10 +227,11 @@
       </div>
     </div>
   </body>
-  <!-- Bootstrap. Just in case. JavaScript Bundle with Popper -->
-  <script
+    <!-- Bootstrap. Just in case. JavaScript Bundle with Popper -->
+    <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
-  ></script>
+    ></script>
+    <script src="https://kit.fontawesome.com/4c545fd54b.js" crossorigin="anonymous"></script>
 </html>
