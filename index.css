@@ -1,10 +1,46 @@
 body {
-  background-color: #363535;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.navbar {
+  background: #004e92;
+}
+
+a.nav-link,
 h1,
 h2,
 p,
 li {
   color: white;
+}
+
+:target {
+  scroll-margin-top: 3.5rem;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.text-paragraph,
+.numbered-item {
+  font-size: 20px;
+}
+
+.project-background-container,
+.project-description-brief {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
