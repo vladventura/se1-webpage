@@ -16,7 +16,12 @@ body {
   background: #004e92;
 }
 
+.dropdown-menu {
+  background: #003C78;
+}
+
 a.nav-link,
+a.dropdown-item,
 h1,
 h2,
 p,
