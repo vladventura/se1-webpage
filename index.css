@@ -42,10 +42,13 @@ li {
 .project-background-container {
   margin-top: 1rem;
 }
+
+.project-video,
 .project-description-brief {
   margin-top: 3rem;
 }
 
+.project-video,
 .project-background-container,
 .project-description-brief {
   margin-bottom: 3rem;
