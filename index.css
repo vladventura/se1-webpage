@@ -1,3 +1,10 @@
+html {
+  background: #000428;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background: #000428; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -10,6 +17,10 @@ body {
     #004e92,
     #000428
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100%;
+  /* KLUDGE: Ideally, this would go on the element that needs this padding away. */
+  /* However, this is not that bad of a line because it avoids keeping track of the last element. */
+  padding-bottom: 0.5rem;
 }
 
 .navbar {
@@ -55,6 +66,7 @@ li {
 
 .project-video,
 .project-background-container,
+.team-roster,
 .project-description-brief {
   margin-bottom: 3rem;
 }
